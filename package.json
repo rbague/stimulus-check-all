@@ -2,11 +2,15 @@
   "name": "stimulus-check-all",
   "version": "0.1.0",
   "description": "A Stimulus Controller to implement check-all checkbox feature",
-  "main": "src/index.js",
+  "main": "dist/stimulus-check-all.umd.js",
+  "module": "src/index.js",
   "private": false,
   "repository": {
     "type": "git",
     "url": "git+https://github.com/rbague/stimulus-check-all.git"
+  },
+  "scripts": {
+    "build": "rollup --config"
   },
   "keywords": [
     "stimulus",
@@ -24,5 +28,8 @@
   "dependencies": {
     "@github/check-all": "^0.3.0",
     "stimulus": "^1.1.1"
+  },
+  "devDependencies": {
+    "rollup": "^2.10.9"
   }
 }

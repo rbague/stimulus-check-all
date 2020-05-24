@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>StimulusCheckAll demo</title>
+
+    <script src="https://unpkg.com/stimulus/dist/stimulus.umd.js"></script>
+    <script src="https://unpkg.com/@github/check-all@latest"></script>
+    <script src="../dist/stimulus-check-all.umd.js"></script>
+    <script type="text/javascript">
+      (function () {
+        const application = Stimulus.Application.start();
+        application.register("check-all", StimulusCheckAll);
+      })();
+    </script>
+  </head>
+  <body>
+    <div data-controller="check-all">
+      <div>Count: <span data-target="check-all.count">0</span></div>
+      <label><input type="checkbox" data-target="check-all.all"> Check All</label>
+      <label><input type="checkbox"> github/fetch</label>
+      <label><input type="checkbox"> github/textarea-autosize</label>
+      <label><input type="checkbox"> github/eventlistener-polyfill</label>
+      <label><input type="checkbox"> github/quote-selection</label>
+    </div>
+  </body>
+</html>
