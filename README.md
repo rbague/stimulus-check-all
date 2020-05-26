@@ -1,4 +1,5 @@
 # Stimulus CheckAll
+[![npm version](https://badge.fury.io/js/stimulus-check-all.svg)](https://badge.fury.io/js/stimulus-check-all)
 
 A wrapper for [@github/check-all] as a Stimulus Controller
 
