@@ -15,7 +15,7 @@ npm install --save stimulus-check-all
 
 Or you can use it directly from UNPKG, which then will be globally available as `StimulusCheckAll`:
 ```html
-<script src="https://unpkg.com/@github/check-all@0.3.0"></script> <!-- required -->
+<script src="https://unpkg.com/@github/check-all@latest"></script> <!-- required -->
 <script src="https://unpkg.com/stimulus-check-all@latest"></script> <!-- or '/dist/stimulus-check-all.min.js' -->
 ```
 

@@ -27,7 +27,7 @@
   },
   "homepage": "https://github.com/rbague/stimulus-check-all#readme",
   "dependencies": {
-    "@github/check-all": "^0.3.0",
+    "@github/check-all": "^0.4.0",
     "stimulus": "^1.1.1"
   },
   "devDependencies": {
