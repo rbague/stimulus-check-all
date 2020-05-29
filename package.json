@@ -1,6 +1,6 @@
 {
   "name": "stimulus-check-all",
-  "version": "0.2.1",
+  "version": "0.3.0",
   "description": "A Stimulus Controller to implement check-all checkbox feature",
   "main": "dist/stimulus-check-all.js",
   "module": "src/index.js",
