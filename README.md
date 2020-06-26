@@ -13,10 +13,16 @@ yarn add stimulus-check-all
 npm install --save stimulus-check-all
 ```
 
-Or you can use it directly from UNPKG, which then will be globally available as `StimulusCheckAll`:
+Or you can use UMD build directly from UNPKG, which then will be globally available as `StimulusCheckAll`, and bundles `@github/check-all`:
 ```html
-<script src="https://unpkg.com/@github/check-all@latest"></script> <!-- required -->
-<script src="https://unpkg.com/stimulus-check-all@latest"></script> <!-- or '/dist/stimulus-check-all.min.js' -->
+<script src="https://unpkg.com/stimulus/dist/stimulus.umd.js"></script> <!-- Stimulus need to be loaded globally -->
+<script src="https://unpkg.com/stimulus-check-all@latest/dist/stimulus-check-all.umd.js"></script> <!-- or '/dist/stimulus-check-all.umd.min.js' -->
+```
+
+There is also a CommonJS build on UNPKG:
+```
+https://unpkg.com/stimulus-check-all/dist/stimulus-check-all.js
+https://unpkg.com/stimulus-check-all/dist/stimulus-check-all.min.js
 ```
 
 ## Usage
