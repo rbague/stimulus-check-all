@@ -28,6 +28,20 @@ https://unpkg.com/stimulus-check-all/dist/stimulus-check-all.min.js
 ## Usage
 
 For the most basic usage, register the controller in the application and create a div with some checkboxes.
+In the case you want to exclude some checkboxes from the check-all features, add a `data-skip` attribute to the checkbox.
+
+### HTML
+```html
+<div data-controller="check-all">
+  <div>Count: <span data-target="check-all.count">0</span></div> <!-- optional -->
+  <label><input type="checkbox" data-target="check-all.all"> Check All</label> <!-- optional -->
+  <label><input type="checkbox"> github/fetch</label>
+  <label><input type="checkbox"> github/textarea-autosize</label>
+  <label><input type="checkbox"> github/eventlistener-polyfill</label>
+  <label><input type="checkbox"> github/quote-selection</label>
+  <label><input type="checkbox" data-skip> skip-this-one</label> <!-- this one is skipped -->
+</div>
+```
 
 ### JS
 ```js
@@ -37,18 +51,6 @@ import CheckAll from "stimulus-check-all"
 const application = Application.start()
 ...
 application.register("check-all", CheckAll)
-```
-
-### HTML
-```html
-<div data-controller="check-all">
-  <div>Count: <span data-target="check-all.count">0</span></div><!-- optional -->
-  <label><input type="checkbox" data-target="check-all.all"> Check All</label><!-- optional -->
-  <label><input type="checkbox"> github/fetch</label>
-  <label><input type="checkbox"> github/textarea-autosize</label>
-  <label><input type="checkbox"> github/eventlistener-polyfill</label>
-  <label><input type="checkbox"> github/quote-selection</label>
-</div>
 ```
 
 ### Targets
