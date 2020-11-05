@@ -1,8 +1,8 @@
-import babel from "@rollup/plugin-babel"
+import babel from '@rollup/plugin-babel'
 
 export default {
   input: 'src/index.js',
-  output:{
+  output: {
     file: 'dist/stimulus-check-all.js',
     format: 'cjs',
     sourcemap: true,

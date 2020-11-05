@@ -1,20 +1,20 @@
-import { Controller } from "stimulus"
-import checkAll from "@github/check-all"
+import { Controller } from 'stimulus'
+import checkAll from '@github/check-all'
 
 export default class extends Controller {
-  static targets = ["all", "count"]
+  static targets = ['all', 'count']
 
-  connect() {
+  connect () {
     this._setAttributes()
     this.subscription = checkAll(this.element)
   }
 
-  disconnect() {
+  disconnect () {
     this.subscription.unsubscribe()
     this.subscription = null
   }
 
-  _setAttributes() {
+  _setAttributes () {
     if (this.hasAllTarget) {
       this.allTarget.setAttribute('data-check-all', '')
     }
