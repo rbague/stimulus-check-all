@@ -61,6 +61,31 @@ All of them are optional, as they are in [@github/check-all].
 
 `count`: Displays the number of selected checkboxes
 
+## Extending controller
+You can extend the functionality of the controller using inheritance. Just remember to call super if overriding `connect` or `disconnect`:
+
+```js
+import CheckAllController from 'stimulus-check-all'
+
+export default class extends CheckAllController {
+  connect () {
+    super.connect() // don't forget this line
+
+    // custom code
+  }
+
+  disconnect () {
+    super.disconnect() // don't forget this line
+
+    // custom code
+  }
+}
+```
+
+The controller provides three different properties:
+- `this.checkboxes`: All the checkboxes where the check-all feature is applied
+- `this.checked`: The checked checkboxes
+- `this.unchecked`: The unchecked checkboxes
 
 ## License
 

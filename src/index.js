@@ -22,8 +22,20 @@ export default class extends Controller {
       this.countTarget.setAttribute('data-check-all-count', '')
     }
 
+    this.checkboxes.forEach(e => e.setAttribute('data-check-all-item', ''))
+  }
+
+  get checkboxes () {
     const selector = 'input[type="checkbox"]:not([data-check-all]):not([data-skip])'
-    const checkboxes = this.element.querySelectorAll(selector)
-    checkboxes.forEach(e => e.setAttribute('data-check-all-item', ''))
+    const elements = this.element.querySelectorAll(selector)
+    return Array.from(elements)
+  }
+
+  get checked () {
+    return this.checkboxes.filter(checkbox => checkbox.checked)
+  }
+
+  get unchecked () {
+    return this.checkboxes.filter(checkbox => !checkbox.checked)
   }
 }
