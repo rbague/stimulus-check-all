@@ -1,5 +1,7 @@
 # Stimulus CheckAll
-[![npm version](https://badge.fury.io/js/stimulus-check-all.svg)](https://badge.fury.io/js/stimulus-check-all)
+![npm version](https://badgen.net/npm/v/stimulus-check-all)
+![npm downloads](https://badgen.net/npm/dt/stimulus-check-all)
+![license](https://badgen.net/npm/license/stimulus-check-all)
 
 A wrapper for [@github/check-all] as a Stimulus Controller
 
@@ -57,9 +59,8 @@ application.register("check-all", CheckAll)
 
 All of them are optional, as they are in [@github/check-all].
 
-`all`: The checkbox used to check all of the other ones in the container
-
-`count`: Displays the number of selected checkboxes
+- `all`: The checkbox used to check all of the other ones in the container
+- `count`: Displays the number of selected checkboxes
 
 ## Extending controller
 You can extend the functionality of the controller using inheritance. Just remember to call super if overriding `connect` or `disconnect`:
