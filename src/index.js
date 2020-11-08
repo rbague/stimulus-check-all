@@ -6,12 +6,12 @@ export default class extends Controller {
 
   connect () {
     this._setAttributes()
-    this.subscription = checkAll(this.element)
+    this._subscription = checkAll(this.element)
   }
 
   disconnect () {
-    this.subscription.unsubscribe()
-    this.subscription = null
+    this._subscription.unsubscribe()
+    this._subscription = null
   }
 
   _setAttributes () {
