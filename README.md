@@ -84,7 +84,7 @@ Apart from access to the targets defined in the parent class, the controller exp
 
 ## Contributing
 
-Bug reports and pull requests are more than welcome on [GitHub](https://github.com/github/check-all).
+Bug reports and pull requests are more than welcome on [GitHub](https://github.com/rbague/stimulus-check-all).
 
 ### Coding standards
 This project uses Standard to minimize bike shedding related to code formatting.
