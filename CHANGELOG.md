@@ -2,6 +2,9 @@
 
 ## Unreleased
 
+## v0.6.0
+- Make Stimulus a peer dependency to allow usage with stimulus 2.0 - [@glaszig](https://github.com/rbague/stimulus-check-all/pull/7)
+
 ## v0.5.0
 - Use the [standardjs](https://standardjs.com) [style guide](https://standardjs.com/rules.html)
 - Expose `checkboxes`, `checked` and `uncheded` properties so they can be accesed if inheriting the controller
