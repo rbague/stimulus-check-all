@@ -1,6 +1,8 @@
 import { Controller } from 'stimulus'
 import checkAll from '@github/check-all'
 
+const isChecked = (el) => el.checked
+
 export default class extends Controller {
   static targets = ['all', 'count']
 
@@ -17,6 +19,11 @@ export default class extends Controller {
   _setAttributes () {
     if (this.hasAllTarget) {
       this.allTarget.setAttribute('data-check-all', '')
+      if (this.checkboxes.every(isChecked)) {
+        this.allTarget.checked = true
+      } else {
+        this.allTarget.indeterminate = this.checkboxes.some(isChecked)
+      }
     }
     if (this.hasCountTarget) {
       this.countTarget.setAttribute('data-check-all-count', '')
