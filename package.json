@@ -1,20 +1,17 @@
 {
+  "private": false,
   "name": "stimulus-check-all",
   "version": "0.6.0",
   "description": "A Stimulus Controller to implement check-all checkbox feature",
-  "main": "dist/stimulus-check-all.js",
-  "module": "src/index.js",
-  "private": false,
+  "author": "Roger Bagué",
+  "license": "MIT",
+  "homepage": "https://github.com/rbague/stimulus-check-all#readme",
+  "bugs": {
+    "url": "https://github.com/rbague/stimulus-check-all/issues"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/rbague/stimulus-check-all.git"
-  },
-  "scripts": {
-    "lint": "standard",
-    "build": "npm-run-all build:cjs build:umd",
-    "build:cjs": "rollup --config rollup.config.js",
-    "build:umd": "rollup --config rollup.config.umd.js",
-    "prepare": "npm run build"
   },
   "keywords": [
     "stimulus",
@@ -23,14 +20,14 @@
     "checkbox",
     "check-all"
   ],
-  "author": "Roger Bagué",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/rbague/stimulus-check-all/issues"
-  },
-  "homepage": "https://github.com/rbague/stimulus-check-all#readme",
-  "standard": {
-    "parser": "babel-eslint"
+  "main": "dist/stimulus-check-all.js",
+  "module": "src/index.js",
+  "scripts": {
+    "lint": "standard",
+    "build": "npm-run-all build:cjs build:umd",
+    "build:cjs": "rollup --config rollup.config.js",
+    "build:umd": "rollup --config rollup.config.umd.js",
+    "prepare": "npm run build"
   },
   "dependencies": {
     "@github/check-all": "^0.4.0"
@@ -50,5 +47,8 @@
   },
   "peerDependencies": {
     "stimulus": ">=1.1.1 <3"
+  },
+  "standard": {
+    "parser": "babel-eslint"
   }
 }
