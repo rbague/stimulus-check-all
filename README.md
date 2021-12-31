@@ -40,18 +40,15 @@ https://unpkg.com/stimulus-check-all/dist/stimulus-check-all.min.js
 
 ## Usage
 
-For the most basic usage create a div with some checkboxes.
-In the case you want to exclude some checkboxes from the check-all features, add a `data-skip` attribute to those checkboxes.
+For the most basic usage create a div with some checkboxes, tag the first one with `data-check-all-target="all"` and the rest with `data-check-all-target="checkbox"`.
 
 ```html
 <div data-controller="check-all">
-  <div>Count: <span data-target="check-all.count">0</span></div> <!-- optional -->
-  <label><input type="checkbox" data-target="check-all.all"> Check All</label> <!-- optional -->
-  <label><input type="checkbox"> github/fetch</label>
-  <label><input type="checkbox"> github/textarea-autosize</label>
-  <label><input type="checkbox"> github/eventlistener-polyfill</label>
-  <label><input type="checkbox"> github/quote-selection</label>
-  <label><input type="checkbox" data-skip> skip-this-one</label> <!-- this one is skipped -->
+  <label><input type="checkbox" data-check-all-target="check-all.all"> Check All</label>
+  <label><input type="checkbox" data-check-all-target="checkbox"> github/fetch</label>
+  <label><input type="checkbox" data-check-all-target="checkbox"> github/textarea-autosize</label>
+  <label><input type="checkbox" data-check-all-target="checkbox"> github/eventlistener-polyfill</label>
+  <label><input type="checkbox" data-check-all-target="checkbox"> github/quote-selection</label>
 </div>
 ```
 
@@ -61,6 +58,8 @@ All of them are optional, as they are in [@github/check-all].
 
 - `all`: The checkbox used to check all of the other ones in the container
 - `count`: Displays the number of selected checkboxes
+
+> There's an example with all the targets in [example/index.html](https://github.com/rbague/stimulus-check-all/blob/master/example/index.html)
 
 ## Extending controller
 You can extend the functionality of the controller using inheritance. Just remember to call super if overriding any of the parent's methods, like `connect` or `disconnect`:
@@ -77,7 +76,7 @@ export default class extends CheckAllController {
 }
 ```
 
-Apart from access to the targets defined in the parent class, the controller exposes three other properties:
+Apart from access to the targets defined in the parent class, the controller exposes three properties:
 - `checkboxes`: All the checkboxes where the check-all feature is applied
 - `checked`: The checked checkboxes
 - `unchecked`: The unchecked checkboxes
