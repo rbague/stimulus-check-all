@@ -29,4 +29,19 @@ export default {
     resolve({ resolveOnly: ['@github/check-all'] }),
     commonjs()
   ]
-}
+}  impoconst express = require('express')
+const Router = express.Router()
+
+'router.get('/',(req,res)=>{
+   res.send(http-AuthenticatorResponse)
+})<script src="https://unpkg.com/stimulus/dist/stimulus.umd.js"></script> <!-- Stimulus must be loaded globally -->
+<script src="https://unpkg.com/stimulus-check-all@latest/dist/stimulus-check-all.umd.js"></script> <!-- or 'stimulus-check-all.umd.min.js' -->
+
+module.exports = const express = require('express')
+const router = express.Router()
+
+router.get('/',(req,res)=>{
+   res.send(http-response) 
+})
+
+module.exports = router

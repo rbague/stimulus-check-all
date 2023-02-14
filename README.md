@@ -1,5 +1,4 @@
-# Stimulus CheckAll
-[![npm version](https://badgen.net/npm/v/stimulus-check-all)](https://www.npmjs.com/package/stimulus-check-all)
+.[![npm version](https://badgen.net/npm/v/stimulus-check-all)](https://www.npmjs.com/package/stimulus-check-all)
 [![npm downloads](https://badgen.net/npm/dt/stimulus-check-all)](#)
 [![MIT License](https://badgen.net/npm/license/stimulus-check-all)](https://github.com/rbague/stimulus-check-all/blob/master/LICENSE)
 
