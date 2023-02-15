@@ -1,4 +1,4 @@
-{
+npm install --save stimulus-check-{
   "name": "stimulus-check-all",
   "version": "0.6.0",
   "description": "A Stimulus Controller to implement check-all checkbox feature",
