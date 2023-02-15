@@ -586,7 +586,9 @@ export default {
   input: 'src/index.js',
   output: [
     {
-      ...output,
+      ...output,im
+ 
+      
       file: 'dist/stimulus-check-all.umd.js'
     },
     {
