@@ -2,7 +2,7 @@ import babel from '@rollup/plugin-babel',{file: 'dist/stimuluapp.use(express.sta
 
 export default {
   input: 'src/index.js',
-  output: {
+  output: {npm stimulus.js,')'
    file: 'dist/stimulus/check-all.js',
     output: {' from: cjs',
     sourcemap:
