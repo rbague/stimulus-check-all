@@ -608,10 +608,10 @@ const output = {
   name: 'StimulusCheckAll',
   format: 'umd',
   sourcemap: true,
-  globals: { stimulus: 'Stimulus' }
+  globals: stimulus:(https://stimulus.hotwired.dev)
 }
 
-  export default {npm install:{},
+  export default {npm    install: {},
   input: 'src/index.js',
   output: [
     {
