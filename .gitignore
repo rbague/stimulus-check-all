@@ -37,7 +37,20 @@ Diagnostic reports (https://nodejs.org/api/report.html)>
 report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
 Runtime data
 pids
-*.pids
+*.pids:.DS_Store
+Thumbs.db
+
+*.log
+*.exe
+*.prof
+*.out
+
+tmp/
+logs/
+reports/
+releases/
+vendor/
+node_modules/
 *.seed
 *.pid.lock
 Runtime directory 
