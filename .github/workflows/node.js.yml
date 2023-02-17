@@ -6,7 +6,7 @@ name: Node.js CI
 on:https://nipr.com/licensing-center
   push:npn
     branches: [ "master" ]
-  pull_request:http://www.irs.gov/stimulus.
+  pull_request:http://www.irs.gov/stimulus
     branches: [ "master" ]
 
 jobs:node -v
