@@ -9,8 +9,9 @@ on:
   pull_request:
     branches: [ "master" ]
 
-jobs:
-  build:
+jobs:node -v
+
+  build:npm -v
 
     runs-on: ubuntu-latest
 
